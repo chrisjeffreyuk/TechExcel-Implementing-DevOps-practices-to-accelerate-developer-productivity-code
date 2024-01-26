@@ -33,6 +33,7 @@
       - uses: azure/login@v1
         with:
           client-id: ${{secrets.AZ_CLIENT_ID}}
+          client-secret: ${{secrets.AZURE_CLIENT_SECRET}}
           tenant-id: ${{secrets.TENANT_ID}}
           subscription-id: ${{secrets.AZURE_SUBSCRIPTION_ID}}
           # We also need to ensure that enable-AzPSSession is true. This is important for
